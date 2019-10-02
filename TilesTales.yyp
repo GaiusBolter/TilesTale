@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "7d730bd4-f139-4fef-9148-40032713e1fa",
+            "Value": {
+                "id": "d4099103-5037-4be1-85cf-46fbc1284e13",
+                "resourcePath": "sprites\\spr_char_stand\\spr_char_stand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81c4d45b-0c3d-4ad9-a845-9699997fe8e7",
             "Value": {
                 "id": "20fb3b8b-c54e-4c82-9d2f-eb48d48885d4",
