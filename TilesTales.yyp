@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "81c4d45b-0c3d-4ad9-a845-9699997fe8e7",
+            "Value": {
+                "id": "20fb3b8b-c54e-4c82-9d2f-eb48d48885d4",
+                "resourcePath": "objects\\obj_collidable\\obj_collidable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f328f89-6824-4564-9fcf-8f22990a65ff",
             "Value": {
                 "id": "019e0385-9dde-4496-b648-7a38f2da4a14",
