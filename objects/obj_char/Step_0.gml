@@ -1,6 +1,7 @@
 key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
 key_jump = keyboard_check_pressed(vk_space);
+key_jump_held = keyboard_check(vk_space);
    
 move = key_left + key_right;
 hsp += move * movespeed;
@@ -15,9 +16,12 @@ if (vsp < 10) {
 if (place_meeting(x, y+1, obj_collidable))
 {	
 	currentgrav = 0;
-	vsp = key_jump * -jumpspeed;
+	vsp = key_jump * -jumpmaxspeed * max(0.6,(abs(hsp)/maxspeed));
 }
-	
+
+if (vsp < 0) && (!key_jump_held) {
+	vsp = max(vsp, 0);
+}
 	
 if (place_meeting(x + hsp, y, obj_collidable)) {
 	while(!place_meeting(x+sign(hsp), y, obj_collidable))
@@ -39,7 +43,7 @@ if (hsp > 0 && key_right == 0)
 	hsp -= movespeed;
 if (hsp < 0 && key_left == 0)
 	hsp += movespeed;
-	
+
 x += hsp;
 y += vsp;
 
